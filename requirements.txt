@@ -1,0 +1,5 @@
+pygame
+pygame-menu
+pandas
+openpyxl
+pygame-textinput
