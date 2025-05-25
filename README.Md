@@ -1,1 +1,6 @@
-# [How to Create a Platformer Game in Python](https://www.thepythoncode.com/article/platformer-game-with-pygame-in-python)
+# 2d Platformer for anger regulation research
+## Features
+   - AI, that follows after player and imitates second player
+   - Questionnaires with Excel integrated auto saving data
+## Preview
+![Alt Text](ezgif-78e6c23d9da436.gif)

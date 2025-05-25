@@ -199,5 +199,3 @@ world_map =  {
 map_sizex, map_sizey = 66, 10
 tile_size = 50
 level = 0
-#WIDTH, HEIGHT = 1000, len(world_map[0][0]) * tile_size
-#world_map[0][2][7] = 'Z'

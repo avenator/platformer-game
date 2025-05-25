@@ -3,13 +3,13 @@ import pygame
 pygame.init()
 def pool(status, jump=0):
     surface = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
-    menu = pygame_menu.Menu(title='',width= pygame.display.get_surface().get_size()[0], height=pygame.display.get_surface().get_size()[1])
+    pygame_rect = pygame.Rect(1770, 0, 150, 150)
+    menu = pygame_menu.Menu(title='', width= pygame.display.get_surface().get_size()[0], height=pygame.display.get_surface().get_size()[1])
     HELP = 'Какую эмоцию(и) Вы сейчас испытываете и насколько она(и) выражена(ы)? \n'\
             ' 0 - отсутствует, 8 - очень сильно выражена. \n'\
             'Используйте клавишы ВВЕРХ/ВНИЗ и ВЛЕВО/ВПРАВО для перемещения, 0 (НОЛЬ) для окончания оценивания.'
 
     menu.add.label(HELP, max_char=-1, font_size=20)
-    #menu.add.button(button)
     # Single value
     range_values_discrete = {0: '0', 1: '1', 2: '2', 3: '3', 4: '4', 5: '5', 6: '6', 7: '7', 8: '8'}
     menu.add.range_slider('Радость', 0, list(range_values_discrete.keys()),
@@ -65,7 +65,7 @@ def pool(status, jump=0):
 
         if menu.is_enabled():
             menu.draw(surface)
+            pygame.draw.rect(surface, 'black', pygame_rect)
             menu.update(events)
-
 
         pygame.display.update()
