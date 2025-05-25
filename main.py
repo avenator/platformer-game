@@ -31,7 +31,7 @@ class Platformer:
         self.player_event = False
         self.state = None
         self.points = 0
-        self.glevel = -2
+        self.glevel = 0
         self.gjump = 0
         self.pygame_rect = pygame.Rect(1770, 0, 150, 150)
         self.dcts = []
@@ -201,7 +201,7 @@ def get_subject_name():
         events = pygame.event.get()
 
         for event in events:
-            if event.type == pygame.QUIT:
+            if event.type == pygame.K_KP_ENTER:
                 return textinput.value
 
         textinput.update(events)
