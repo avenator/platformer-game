@@ -1,4 +1,4 @@
-# 2d Platformer for HSE University anger regulation research
+# 2d Platformer for HSE University emotion regulation research
 ## Features
    - AI, that follows player and imitates second player
    - Questionnaires with Excel integrated auto saving data
